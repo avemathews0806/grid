@@ -1,196 +1,195 @@
-                        /*Variables*/
-                    /*use rem for padding and font-size*/
-                    
-                     :root {
-                        --primary: linear-gradient(to bottom right, rgb(41, 188, 214), rgb(215, 97, 219));
-                        ;
-                        --dark: #333333;
-                        --light: #ffffff;
-                        --shadow: 0 1px 5px rgb(104, 104, 104, 0.8);
-                    }
-                    
-                    html {
-                        box-sizing: border-box;
-                        font-family: Arial, Helvetica, sans-serif;
-                        color: var(--dark);
-                    }
-                    
-                    body {
-                        background: white;
-                        ;
-                        margin: 30px 30px;
-                        line-height: 1.4em;
-                    }
-                    /*Universal style for all buttons in the website*/
-                    
-                    .btn {
-                        background-color: var(--dark);
-                        color: var(--light);
-                        padding: 0.6rem 1.3rem;
-                        text-decoration: none;
-                        border: 0;
-                    }
-                    /*making images 100% so that they stay within their respected containers*/
-                    
-                    img {
-                        max-width: 100%;
-                    }
-                    
-                    .wrapper {
-                        display: grid;
-                        grid-gap: 20px;
-                    }
-                    
-                    .main-nav ul {
-                        display: grid;
-                        grid-gap: 20px;
-                        padding: 0;
-                        list-style: none;
-                        grid-template-columns: repeat(4, 1fr);
-                    }
-                    
-                    .main-nav a {
-                        background: var(--primary);
-                        display: block;
-                        text-decoration: none;
-                        padding: 0.8rem;
-                        text-align: center;
-                        color: var(--dark);
-                        text-transform: uppercase;
-                        font-size: 1.1rem;
-                        box-shadow: var(--shadow);
-                    }
-                    
-                    .main-nav a:hover {
-                        background: var(--dark);
-                        color: var(--light);
-                    }
-                    
-                    .top-container {
-                        display: grid;
-                        grid-gap: 20px;
-                        grid-template-areas: 'showcase showcase top-box-a' 'showcase showcase top-box-b';
-                    }
-                    
-                    .showcase img {
-                        width: 100%;
-                        height: 460px;
-                        box-shadow: var(--shadow);
-                    }
-                    
-                    .showcase {
-                        grid-area: showcase;
-                        min-height: 400px;
-                        background: var(--primary);
-                        padding: 3rem;
-                        box-shadow: var(--shadow);
-                        display: grid;
-                        grid-gap: 30px;
-                        grid-template-columns: 1fr 1fr;
-                        padding: 18px;
-                    }
-                    
-                    .showcase p {
-                        font-size: 20px;
-                    }
-                    
-                    .top-box {
-                        background: var(--primary);
-                        display: grid;
-                        align-items: center;
-                        justify-items: center;
-                        box-shadow: var(--shadow);
-                        padding: 1.5rem;
-                    }
-                    
-                    .top-box .price {
-                        font-size: 2rem;
-                    }
-                    
-                    .top-box-a {
-                        grid-area: top-box-a;
-                    }
-                    
-                    .top-box-b {
-                        grid-area: top-box-b;
-                    }
-                    
-                    .boxes {
-                        display: grid;
-                        grid-gap: 20px;
-                        /*this grid template allows for these boxes to be responsive even if more boxes are added in the future*/
-                        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-                    }
-                    
-                    .box {
-                        background: var(--primary);
-                        text-align: center;
-                        box-shadow: var(--shadow);
-                        padding: 1rem;
-                    }
-                    
-                    .info img {
-                        width: 100%;
-                        height: 400px;
-                        box-shadow: var(--shadow);
-                    }
-                    
-                    .info {
-                        background: var(--primary);
-                        box-shadow: var(--shadow);
-                        display: grid;
-                        grid-gap: 30px;
-                        grid-template-columns: 1fr 1fr;
-                        padding: 20px;
-                    }
-                    
-                    .info p {
-                        font-size: 18px;
-                    }
-                    
-                    .portfolio {
-                        display: grid;
-                        grid-gap: 20px;
-                        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-                    }
-                    
-                    .portfolio img {
-                        width: 100%;
-                        box-shadow: var(--shadow);
-                    }
-                    
-                    footer {
-                        background: var(--dark);
-                        color: var(--light);
-                        box-shadow: var(--shadow);
-                        text-align: center;
-                        margin-top: 10px;
-                        padding: 10px;
-                    }
-                    
-                    @media(max-width: 768px) {
-                        .top-container {
-                            grid-template-areas: 'showcase showcase' 'top-box-a top-box-b'
-                        }
-                        .showcase h1 {
-                            font-size: 2.5rem;
-                        }
-                        .main-nav ul {
-                            grid-template-columns: 1fr;
-                        }
-                        .info {
-                            grid-template-columns: 1fr;
-                        }
-                        .info .btn {
-                            display: block;
-                            text-align: center;
-                            margin: auto;
-                        }
-                        .showcase {
-                            grid-template-columns: 1fr;
-                        }
-                        .showcase .btn {
-                            display: block;
-                            text-align: center;
-                            margin: auto;
-                        }
+                                            /*Variables*/
+                                        /*use rem for padding and font-size*/
+                                        
+                                         :root {
+                                            --primary: rgb(195, 196, 199);
+                                            --dark: #333333;
+                                            --light: #ffffff;
+                                            --shadow: 0 1px 5px rgb(104, 104, 104, 0.8);
+                                        }
+                                        
+                                        html {
+                                            box-sizing: border-box;
+                                            font-family: Arial, Helvetica, sans-serif;
+                                            color: var(--dark);
+                                        }
+                                        
+                                        body {
+                                            background: white;
+                                            ;
+                                            margin: 30px 30px;
+                                            line-height: 1.4em;
+                                        }
+                                        /*Universal style for all buttons in the website*/
+                                        
+                                        .btn {
+                                            background-color: var(--dark);
+                                            color: var(--light);
+                                            padding: 0.6rem 1.3rem;
+                                            text-decoration: none;
+                                            border: 0;
+                                        }
+                                        /*making images 100% so that they stay within their respected containers*/
+                                        
+                                        img {
+                                            max-width: 100%;
+                                        }
+                                        
+                                        .wrapper {
+                                            display: grid;
+                                            grid-gap: 20px;
+                                        }
+                                        
+                                        .main-nav ul {
+                                            display: grid;
+                                            grid-gap: 20px;
+                                            padding: 0;
+                                            list-style: none;
+                                            grid-template-columns: repeat(4, 1fr);
+                                        }
+                                        
+                                        .main-nav a {
+                                            background: var(--primary);
+                                            display: block;
+                                            text-decoration: none;
+                                            padding: 0.8rem;
+                                            text-align: center;
+                                            color: var(--dark);
+                                            text-transform: uppercase;
+                                            font-size: 1.1rem;
+                                            box-shadow: var(--shadow);
+                                        }
+                                        
+                                        .main-nav a:hover {
+                                            background: var(--dark);
+                                            color: var(--light);
+                                        }
+                                        
+                                        .top-container {
+                                            display: grid;
+                                            grid-gap: 20px;
+                                            grid-template-areas: 'showcase showcase top-box-a' 'showcase showcase top-box-b';
+                                        }
+                                        
+                                        .showcase img {
+                                            width: 100%;
+                                            height: 460px;
+                                            box-shadow: var(--shadow);
+                                        }
+                                        
+                                        .showcase {
+                                            grid-area: showcase;
+                                            min-height: 400px;
+                                            background: var(--primary);
+                                            padding: 3rem;
+                                            box-shadow: var(--shadow);
+                                            display: grid;
+                                            grid-gap: 30px;
+                                            grid-template-columns: 1fr 1fr;
+                                            padding: 18px;
+                                        }
+                                        
+                                        .showcase p {
+                                            font-size: 20px;
+                                        }
+                                        
+                                        .top-box {
+                                            background: var(--primary);
+                                            display: grid;
+                                            align-items: center;
+                                            justify-items: center;
+                                            box-shadow: var(--shadow);
+                                            padding: 1.5rem;
+                                        }
+                                        
+                                        .top-box .price {
+                                            font-size: 2rem;
+                                        }
+                                        
+                                        .top-box-a {
+                                            grid-area: top-box-a;
+                                        }
+                                        
+                                        .top-box-b {
+                                            grid-area: top-box-b;
+                                        }
+                                        
+                                        .boxes {
+                                            display: grid;
+                                            grid-gap: 20px;
+                                            /*this grid template allows for these boxes to be responsive even if more boxes are added in the future*/
+                                            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+                                        }
+                                        
+                                        .box {
+                                            background: var(--primary);
+                                            text-align: center;
+                                            box-shadow: var(--shadow);
+                                            padding: 1rem;
+                                        }
+                                        
+                                        .info img {
+                                            width: 100%;
+                                            height: 400px;
+                                            box-shadow: var(--shadow);
+                                        }
+                                        
+                                        .info {
+                                            background: var(--primary);
+                                            box-shadow: var(--shadow);
+                                            display: grid;
+                                            grid-gap: 30px;
+                                            grid-template-columns: 1fr 1fr;
+                                            padding: 20px;
+                                        }
+                                        
+                                        .info p {
+                                            font-size: 18px;
+                                        }
+                                        
+                                        .portfolio {
+                                            display: grid;
+                                            grid-gap: 20px;
+                                            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+                                        }
+                                        
+                                        .portfolio img {
+                                            width: 100%;
+                                            box-shadow: var(--shadow);
+                                        }
+                                        
+                                        footer {
+                                            background: var(--dark);
+                                            color: var(--light);
+                                            box-shadow: var(--shadow);
+                                            text-align: center;
+                                            margin-top: 10px;
+                                            padding: 10px;
+                                        }
+                                        
+                                        @media(max-width: 768px) {
+                                            .top-container {
+                                                grid-template-areas: 'showcase showcase' 'top-box-a top-box-b'
+                                            }
+                                            .showcase h1 {
+                                                font-size: 2.5rem;
+                                            }
+                                            .main-nav ul {
+                                                grid-template-columns: 1fr;
+                                            }
+                                            .info {
+                                                grid-template-columns: 1fr;
+                                            }
+                                            .info .btn {
+                                                display: block;
+                                                text-align: center;
+                                                margin: auto;
+                                            }
+                                            .showcase {
+                                                grid-template-columns: 1fr;
+                                            }
+                                            .showcase .btn {
+                                                display: block;
+                                                text-align: center;
+                                                margin: auto;
+                                            }
